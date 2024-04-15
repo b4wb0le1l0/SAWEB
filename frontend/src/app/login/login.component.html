@@ -1,0 +1,28 @@
+<title>welcome</title>
+
+<div class="parent">
+  <div class="main">
+    <input type="checkbox" id="chk" aria-hidden="true">
+
+    <div class="signup">
+      <form>
+        <label for="chk" aria-hidden="true">Sign up</label>
+        <input type="email" id="email-1" name="email" autocomplete="off" placeholder="Email" required="" [(ngModel)]="signUp.email">
+        <b><div id="email-error"></div></b>
+        <input type="password" id="pswd-1" name="pswd" placeholder="Password" required="" [(ngModel)]="signUp.password">
+        <b><div id="password-error"></div></b>
+        <button class="signup_btn" (click)="registration()">Sign up</button>
+      </form>
+    </div>
+
+    <div class="login">
+      <form>
+        <label for="chk" aria-hidden="true">Login</label>
+        <input type="email" id="email-2" name="email" autocomplete="off" placeholder="Email" required="" [(ngModel)]="signIn.email">
+        <b><div id="email-error-login"></div></b>
+        <input type="password" id="pswd-2" name="password" placeholder="Password" required="" [(ngModel)]="signIn.password">
+        <button class="login_btn" (click)="login()">Login</button>
+      </form>
+    </div>
+  </div>
+</div>
